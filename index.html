@@ -71,10 +71,12 @@
       flex-direction: column;
       width: 100%;
       gap: 16px;
+      align-items: center;
     }
     
     .link-button {
-      width: 100%;
+      width: 85%;
+      max-width: 400px;
       padding: 16px;
       border-radius: 12px;
       font-weight: 500;
@@ -88,6 +90,15 @@
       border: none;
       cursor: pointer;
       color: white;
+    }
+    
+    /* Ajustes adicionales para móviles */
+    @media (max-width: 480px) {
+      .link-button {
+        width: 90%;
+        padding: 14px;
+        font-size: 0.95rem;
+      }
     }
     
     .link-button:hover {
