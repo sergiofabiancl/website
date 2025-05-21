@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud  Engineer</title>
+  
+  <!-- Fuentes y estilos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      width: 100%;
+    }
+    
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 3px solid white;
+    }
+    
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin-top: 16px;
+      font-weight: 500;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    
+    .subtitle {
+      color: #546e7a;
+      margin-top: 4px;
+      font-size: 18px;
+    }
+    
+    .bio {
+      text-align: center;
+      max-width: 450px;
+      margin: 10px auto 30px;
+      color: #546e7a;
+      line-height: 1.5;
+    }
+    
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 16px;
+    }
+    
+    .link-button {
+      width: 100%;
+      padding: 16px;
+      border-radius: 12px;
+      font-weight: 500;
+      font-size: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-decoration: none;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    
+    .link-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .icon {
+      margin-right: 12px;
+      font-size: 20px;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #78909c;
+    }
+
+    /* Clase para deshabilitar botones */
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    
+    .disabled:hover {
+      transform: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+    
+    /* Colores personalizados para los botones */
+    .linkedin {
+      background-color: #0077b5;
+    }
+    
+    .instagram {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+    
+    .whatsapp {
+      background-color: #25D366;
+    }
+    
+    .contact {
+      background-color: #546e7a;
+    }
+    
+    .github {
+      background-color: #333;
+    }
+
+    .gitlab {
+      background-color: #D44638; 
+    }
+
+    .email {
+      background-color: #1DA1F2;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="profile-container">
+      <img src="img/profile-color.png" alt="sergiofabiacl" class="profile-image">
+      <h1>Sergio Fabián Garcés Riquelme</h1>
+      <p class="subtitle">SRE | Observabilidad & Cloud Infrastructure</p>
+      <p class="bio">Creando confiabilidad y fomentando colaboración en equipos tecnológicos. De métricas a insights, de problemas a soluciones. 8 años impulsando la excelencia operacional.</p>
+    </div>
+    
+    <div class="links-container">
+      <a href="https://www.linkedin.com/in/sergiofabiancl/" target="_blank" rel="noopener noreferrer" class="link-button linkedin">
+        <i class="fab fa-linkedin icon"></i> LinkedIn
+      </a>
+
+      <a href="https://gitlab.com/sergiofabiancl" target="_blank" rel="noopener noreferrer" class="link-button gitlab">
+        <i class="fab fa-gitlab icon"></i> GitLab
+      </a>
+          
+      <a href="https://github.com/sergiofabiancl" target="_blank" rel="noopener noreferrer" class="link-button github">
+        <i class="fab fa-github icon"></i> GitHub
+      </a>
+
+      <a href="mailto:sergio.fabian.gr@gmail.com" class="link-button email">
+        <i class="fas fa-envelope icon"></i> Enviar Email
+      </a>
+
+      <a href="https://contacts.apple.com/profile/link/tu-nombre" target="_blank" rel="noopener noreferrer" class="link-button contact disabled">
+        <i class="fas fa-address-card icon"></i> Añadir contacto (iPhone)
+      </a>
+      
+      <a href="https://contacts.google.com/person/tu-nombre" target="_blank" rel="noopener noreferrer" class="link-button contact disabled">
+        <i class="fas fa-address-book icon"></i> Añadir contacto (Android)
+      </a>
+
+      <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="link-button whatsapp disabled">
+        <i class="fab fa-whatsapp icon"></i> WhatsApp
+      </a>
+      
+      <a href="https://instagram.com/tunombre" target="_blank" rel="noopener noreferrer" class="link-button instagram disabled">
+        <i class="fab fa-instagram icon"></i> Instagram
+      </a>
+    </div>
+    
+    <footer class="footer">
+      <p>© <script>document.write(new Date().getFullYear())</script> Todos los derechos reservados.</p>
+    </footer>
+  </main>
+</body>
+</html>
